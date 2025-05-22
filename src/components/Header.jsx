@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Header = () => {
+const Header = (props) => {
+  const {handleToggleMenu} = props
   return (
-    <div>Header</div>
+    <header>
+      <button onClick={handleToggleMenu} className='open-nav-button'>
+      <i className="fa-solid fa-bars"></i>
+      </button>
+      <h1 className='text-gradient'>Pokédex</h1>
+    </header>
   )
 }
 
